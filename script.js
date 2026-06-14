@@ -44,7 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
       }
 
-      // Имитация успешной отправки (замените на реальный fetch/axios)
       alert(`Спасибо, ${name}! Ваша заявка на "${service}" принята. Мы перезвоним вам в ближайшее время.`);
       form.reset();
     });
