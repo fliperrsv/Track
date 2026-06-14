@@ -9,11 +9,9 @@
   --bg-panel: #2b2b2b;
   --accent: #c46a3a;
   --accent-light: #e07b3e;
-  --yellow: #f0b90b;
   --text: #f0f0f0;
   --text-muted: #b0b0b0;
   --white: #ffffff;
-  --danger: #d94f4f;
   --border-radius: 8px;
   --shadow: 0 10px 25px rgba(0,0,0,0.4);
   --transition: 0.25s ease;
@@ -34,7 +32,6 @@ body {
   padding: 0 20px;
 }
 
-/* Типографика */
 h1, h2, h3 {
   font-weight: 800;
   line-height: 1.2;
@@ -102,15 +99,15 @@ p { color: var(--text-muted); font-size: 1.1rem; }
   font-size: 1.2rem;
 }
 
-/* Hero */
+/* Hero — фото в корне */
 .hero {
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Замените на свою картинку: images/hero-bg.jpg */
-  background: linear-gradient(135deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.5) 100%), url('images/hero-bg.jpg') center/cover no-repeat;
+  /* Фото лежит прямо в корне: hero-bg.jpg */
+  background: linear-gradient(135deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.5) 100%), url('hero-bg.jpg') center/cover no-repeat;
   background-attachment: fixed;
 }
 .hero-content {
@@ -126,10 +123,6 @@ p { color: var(--text-muted); font-size: 1.1rem; }
   color: var(--accent);
   text-transform: uppercase;
   margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
 }
 .slogan {
   font-size: 1.3rem;
@@ -144,7 +137,6 @@ p { color: var(--text-muted); font-size: 1.1rem; }
   justify-content: center;
 }
 
-/* Секции */
 .section { padding: 80px 0; }
 .dark-bg { background: var(--bg-panel); }
 
@@ -271,7 +263,7 @@ input:focus, select:focus { outline: none; border-color: var(--accent); }
   color: #777;
 }
 
-/* Фиксированные кнопки мессенджеров */
+/* Фиксированные мессенджеры */
 .fixed-messengers {
   position: fixed;
   bottom: 25px;
@@ -298,7 +290,6 @@ input:focus, select:focus { outline: none; border-color: var(--accent); }
 .telegram-btn { background: #2AABEE; }
 .fixed-messengers a:hover { transform: scale(1.1); }
 
-/* Футер */
 .footer {
   text-align: center;
   padding: 30px;
@@ -306,13 +297,11 @@ input:focus, select:focus { outline: none; border-color: var(--accent); }
   border-top: 1px solid #333;
 }
 
-/* Анимация */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Адаптив */
 @media (max-width: 768px) {
   .hero { background-attachment: scroll; }
   .section { padding: 50px 0; }
